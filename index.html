@@ -11,7 +11,8 @@
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Birthday.</tw-noscript></noscript></tw-story>
 <tw-storydata name="Birthday" startnode="1" creator="Twine" creator-version="2.12.0" format="Harlowe" format-version="3.3.9" ifid="DD1DC218-6A0F-4C30-A70E-1DBE7DFC4826" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript">const music = new Audio('music.mp3');
 music.loop = true;
-music.play();
+const startMusic = () => { music.play(); document.removeEventListener('click', startMusic); };
+document.addEventListener('click', startMusic);
 </script><tw-passagedata pid="1" name="Preface" tags="" position="900,400" size="100,100">
 &lt;div style=&quot;text-align:center;&quot;&gt; 
 
