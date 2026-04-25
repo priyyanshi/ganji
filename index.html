@@ -15,8 +15,7 @@ const music1 = new Audio('music1.mp3');
 const startMusic = () => {
   music.play();
   music1.play();
-  setInterval(() => { music1.currentTime = 0; music1.play(); }, 10000);
-  document.removeEventListener('click', startMusic);
+document.removeEventListener('click', startMusic);
 };
 document.addEventListener('click', startMusic);</script><tw-passagedata pid="1" name="Preface" tags="" position="900,400" size="100,100">
 &lt;div style=&quot;text-align:center;&quot;&gt; 
